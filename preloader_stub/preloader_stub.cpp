@@ -54,6 +54,22 @@ bool unhook(FuncPtr target, FuncPtr detour) {
     return false;
 }
 
+bool writeBytes(std::uintptr_t address, std::span<const std::uint8_t> bytes,
+                std::string_view name) {
+    (void)address;
+    (void)bytes;
+    (void)name;
+    return false;
+}
+
+bool writeBytes(std::uintptr_t address, std::string_view hexBytes,
+                std::string_view name) {
+    (void)address;
+    (void)hexBytes;
+    (void)name;
+    return false;
+}
+
 std::uintptr_t resolveSignature(std::string_view signature,
                                 std::string_view moduleName) {
     (void)signature;
