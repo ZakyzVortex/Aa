@@ -45,6 +45,7 @@ if(ANDROID)
     target_link_libraries(framegen PRIVATE
         EGL
         GLESv2
+        GLESv3
         dl
         log
         preloader
