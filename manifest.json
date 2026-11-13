@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "jngsframegen",
+  "name": "JNGS Frame Gen",
+  "author": "JNGS",
+  "version": "3.3.5",
+  "description": "JNGS Frame Gen v3.3.5 - Fixes misaligned/desynchronized generated frames: perspective-correct camera warp, working mismatch guard, safe GL state in hooks, correct previous-output capture.",
+  "type": "preload-native",
+  "entry": "libjngsframegen.so",
+  "minecraft_versions": [],
+  "icon": "icon.png",
+  "overwrite_files": [
+    "manifest.json",
+    "levimod.json",
+    "libjngsframegen.so",
+    "icon.png",
+    "config/config.json"
+  ],
+  "overwrite_folders": [
+    "config"
+  ]
+}
